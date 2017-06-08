@@ -11,7 +11,7 @@ logo: ../logo_fcm_0.jpg
 
 ## Introdução{.build}
 
-Vimos na aula anterior como usar gráficos e tabelas para resumir os dados.
+Vimos anteriormente como usar gráficos e tabelas para resumir os dados.
 
 Podemos também usar **estatísticas**: quantidades numéricas calculadas a partir dos dados.
 
@@ -451,6 +451,17 @@ stripchart(mulheres,method="stack",offset=1,at=0.1,ylim=c(0,5),cex=1.7,cex.axis=
 
 > * Desvio-padrão entre mulheres: $s=`r round(sd(mulheres),2)`$.
 
+
+## Exemplo
+
+
+<center>
+<img src="figuras/A.png" width=600>
+</center>
+
+<center>
+<img src="figuras/L.png" width=600>
+</center>
 
 ## Leitura
 
