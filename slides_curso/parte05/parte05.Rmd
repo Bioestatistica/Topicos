@@ -10,7 +10,7 @@ logo: ../logo_fcm_0.jpg
 
 # Fundamentos de Inferência
 
-## Introdução {.build}
+## Introdução 
 
 > Um dos principais objetivos da Estatística é tirar conclusões a partir dos dados.
 
@@ -21,7 +21,7 @@ logo: ../logo_fcm_0.jpg
 > Quão confiável será utilizar a informação obtida apenas de uma amostra para concluir algo sobre a população?
 
 
-## Inferência Estatística {.build}
+## Inferência Estatística 
 
 <center><img src="figuras/inferencia.PNG" width=600></center>
 
@@ -32,7 +32,7 @@ logo: ../logo_fcm_0.jpg
 **Amostra:** qualquer subconjunto da população que contém os elementos que podem ser observados e é onde as quantidades de interesse podem ser medidas. 
 
 
-## Inferência Estatística {.build}
+## Inferência Estatística 
 
 <center><img src="figuras/inferencia.PNG" width=600></center>
 
@@ -43,22 +43,24 @@ logo: ../logo_fcm_0.jpg
 **Estimativa**: Valor numérico que um estimador assume para uma dada amostra.
 
 
-## Estatística {.build}
+## Estatística
 
-> * Seja $X_{1},...,X_{n}$ uma amostra, $T=f(X_{1},...,X_{n})$ é uma estatística.
+Seja $X_{1},...,X_{n}$ uma amostra, $T=f(X_{1},...,X_{n})$ é uma estatística.
 
-> * $\bar{X}_{n}=\frac{1}{n}\sum_{i=1}^{n}X_{i}=\frac{1}{n}(X_{1}+...+X_{n})$: a média amostral é uma estatística. 
+Exemplos:
 
-> * $X_{(1)}=min\{X_{1},...,X_{n}\}$.
+* $\bar{X}_{n}=\frac{1}{n}\sum_{i=1}^{n}X_{i}=\frac{1}{n}(X_{1}+...+X_{n})$: a média amostral é uma estatística. 
 
-> * $X_{(n)}=max\{X_{1},...,X_{n}\}$.
+* $X_{(1)}=min\{X_{1},...,X_{n}\}$.
 
-> * $X_{(i)}$ é o i-ésimo valor da amostra ordenada. 
+* $X_{(n)}=max\{X_{1},...,X_{n}\}$.
 
-> * Note que uma estatística é uma função que em uma determinada amostra assume um valor específico (estimativa).
+* $X_{(i)}$ é o i-ésimo valor da amostra ordenada. 
+
+* Note que uma estatística é uma função que em uma determinada amostra assume um valor específico (estimativa).
 
 
-## Estatística {.build}
+## Estatística
 
 *  Para que serve uma estatística?  Para "estimar" os valores de uma distribuição, ou características de uma população. 
 
@@ -73,7 +75,7 @@ logo: ../logo_fcm_0.jpg
     *  $\mbox{variância}_{A} = \sum_{i=1}^{n}\frac{(X_{i}-\mbox{média}_{A})^{2}}{n}$ "estima" a $\mbox{variância}_{P}$
 
 
-## Exemplo {.build}
+## Exemplo
 
 Temos interesse em conhecer a média e variância das alturas dos brasileiros adultos. Sabemos que a distribuição das alturas pode ser representada por um modelo normal. 
 
@@ -130,40 +132,6 @@ $$Z=\frac{\bar{X}_{n}-\mu}{\sigma / \sqrt{n}} \sim N(0,1)$$
 ## Teorema do Limite Central
 
 <center><img src="figuras/TCL.png" width=750></center>
-
-
-## Exemplo {.build}
-
-Seja $X_{1},...,X_{n}$ uma amostra aleatória de tamanho $n$ tal que $X\sim Exp(2)$: 
-$$f_{X_{i}}(x)=2e^{-2x}, \qquad \mbox{para } x \geq 0$$
-
-Então $E\left(X_{i}\right)=\frac{1}{2}$ e $Var\left(X_{i}\right)=\frac{1}{4}$.
-
-Suponha que $X_{i}$ modela o tempo de vida de um transistor em horas.  Os tempos de vida de 100 transistores são coletados.  Desejamos estudar a variável aleatória $\bar{X}_{100}$ (média amostral de uma amostra de tamanho 100). Sabemos:
-$$E\left(\bar{X}_{100}\right)=\frac{1}{2} \qquad \mbox{e} \qquad Var\left(\bar{X}_{100}\right)=\frac{1/4}{100}=\frac{1}{400}.$$
-
-Pelo TLC, temos que: $\displaystyle \bar{X}_{n}\sim N\left(\frac{1}{2},\frac{1}{400}\right)$
-
-
-## Exemplo
-
-\[
-\begin{aligned}
-F_{\bar X_{100}}(x) = P\left(\bar{X}_{100} \leq x\right) & = P\left(\frac{\bar{X}_{100}-(1/2)}{(1/2)/\sqrt{100}} \leq \frac{x-(1/2)}{(1/2)/\sqrt{100}}\right)  \\
-& = P\left(Z \leq 10(2x-1) \right) 
-\end{aligned}
-\]
-
-e
-
-\[
-\begin{aligned}
-P\left(\bar{X}_{100} \geq x\right) & = 1 - P\left(\bar{X}_{100} < x\right)  \\
- & = 1 - P\left(\frac{\bar{X}_{100}-(1/2)}{(1/2)/\sqrt{100}} \leq \frac{x-(1/2)}{(1/2)/\sqrt{100}}\right)  \\
-& = 1 - P\left(Z \leq 10(2x-1) \right) 
-\end{aligned}
-\]
-
 
 
 
@@ -283,65 +251,6 @@ $$ X_{i} = \left\{
 > *  $\hat{p}=\frac{S_{n}}{n}$  (média amostral como estimador da média populacional).
 
 
-## Aproximação da Binomial pela Normal {.build}
-
-Utilizando a distribuição exata (n pequeno):
-$$P\left(\hat{p}=\frac{k}{n}\right)=P\left(\frac{S_{n}}{n}=\frac{k}{n}\right)=P\left(S_{n}=k\right)=\left(\begin{array}{l}
-n \\
-k \\
-\end{array}\right)p^{k}\left(1-p\right)^{n-k},$$  
-para $k=0,1,...,n$. 
-
-
-> Utilizando a aproximação para a Normal (n grande): 
-$$\hat{p}\sim N\left(p,\frac{p(1-p)}{n}\right)$$
-
-
-## Exemplo {.build}
-
-Se $p$ for a proporção de fumantes no estado de SP, $p=0.2$ e tivermos coletado uma amostra aleatória simples de 500 indivíduos:
-$$ X_{i} = \left\{
-\begin{array}{ll}
-1, & \mbox{se o indivíduo i é fumante} \\
-0, & \mbox{caso contrário} \\
-\end{array}
-\right.$$
-
-> *  $\hat{p}=\frac{\sum_{i=1}^{500}X_{i}}{500}$. 
-
-> *  $\hat{p}\sim N\left(0.2,\frac{0.2\times0.8}{500}\right)=N\left(0.2,0.00032\right)$ 
-
-> *  $P\left(\hat{p}\leq 0.25\right)= P\left(Z\leq 2.795\right)=\Phi\left(2.795\right)=0.9974$
-
-
-## Aproximação da Binomial pela Normal {.build}
-
-> *  $\hat{p}=\frac{S_{n}}{n}$  $\Rightarrow$ $S_{n}=n\hat{p}$. 
-
-> *  Quando $n$ é grande o suficiente $\hat{p}\sim N\left(p,\frac{p(1-p)}{n}\right)$. 
-
-> *  Qual a distribuição de $S_{n}$ quando n é grande o suficiente?
-
-> *  $S_{n}=X_{1}+...+X_{n}$ 
-
-> *  $\hat{p}=\frac{S_{n}}{n} \sim N\left(p,\frac{p(1-p)}{n}\right)$ 
-
-> *  $S_{n}=n\hat{p}\sim N\left(np,np(1-p)\right)$ 
-
-> *  Portanto: $Bin(n,p)\approx N\left(np,np(1-p)\right)$ quando $n$ é grande
-
-
-## Exemplo {.build}
-
- $X\sim Bin(100,0.4)$ 
-
-> *  $E(X)=100\times0.4=40$ 
-
-> *  $Var(X)=100\times0.4\times0.6=24$ 
-
-> *  $X \approx N(40,24)$ 
-
-> *  $P\left(X\leq 50\right)= P\left(Z\leq \frac{50-40}{\sqrt{24}}\right)\approx \Phi\left(\frac{10}{\sqrt{24}}\right)=\Phi\left(2.04\right)\approx0.9793$
 
 
 ## Leituras
