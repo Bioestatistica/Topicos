@@ -1,6 +1,6 @@
 ---
 title: "Mestrado em Hemoterapia: Bioestatística"
-subtitle: Parte 20
+subtitle: Parte 8
 output:
   ioslides_presentation:
     widescreen: yes
