@@ -12,13 +12,13 @@ logo: ../logo_fcm_0.jpg
 
 ## Introdução 
 
-> Um dos principais objetivos da Estatística é tirar conclusões a partir dos dados.
+Um dos principais objetivos da Estatística é tirar conclusões a partir dos dados.
 
-> Dados em geral consistem de uma amostra de elementos de uma população de interesse.
+Dados em geral consistem de uma amostra de elementos de uma população de interesse.
 
-> O objetivo é usar a amostra e tirar conclusões sobre a população.
+O objetivo é usar a amostra e tirar conclusões sobre a população.
 
-> Quão confiável será utilizar a informação obtida apenas de uma amostra para concluir algo sobre a população?
+Quão confiável será utilizar a informação obtida apenas de uma amostra para concluir algo sobre a população?
 
 
 ## Inferência Estatística 
@@ -79,37 +79,37 @@ Exemplos:
 
 Temos interesse em conhecer a média e variância das alturas dos brasileiros adultos. Sabemos que a distribuição das alturas pode ser representada por um modelo normal. 
 
-> Solução 1: Medir a altura de todos os brasileiros adultos.
+Solução 1: Medir a altura de todos os brasileiros adultos.
 
-> Solução 2: Selecionar de forma aleatória algumas pessoas (amostra), analisá-las e inferir propriedades para toda a população.
+Solução 2: Selecionar de forma aleatória algumas pessoas (amostra), analisá-las e inferir propriedades para toda a população.
 
 <center><img src="figuras/inferencia2.PNG" width=550></center>
 
 
-## Exemplo {.build}
+## Exemplo
 
-Seja $\theta$ a proporção de alunos na Unicamp que concorda com a presença da PM no campus.
+Seja $\theta$ a proporção de alunos na Unicamp que doou sangue pelo menos uma vez nos últimos dois anos.
 
-> *  Inviável perguntar para todos os estudantes: coleta-se uma amostra. 
+*  Inviável perguntar para todos os estudantes: coleta-se uma amostra. 
 
-> *  Planejamento amostral:  obter uma amostra aleatória simples de tamanho $n=100$ alunos, sem reposição. 
+*  Planejamento amostral:  obter uma amostra aleatória simples de tamanho $n=100$ alunos, sem reposição. 
 
-> *  cada $X_{i}$, $i=1,...,100$, vai assumir o valor 1 se o aluno $i$ concorda com presença da PM, e 0 se não. 
+*  cada $X_{i}$, $i=1,...,100$, vai assumir o valor 1 se o aluno $i$ doou sangue pelo menos uma vez nos últimos dois anos, e 0 se não. 
 
-> *  estatística: $T=\frac{X_{1}+...+X_{100}}{100}$. 
+*  estatística: $T=\frac{X_{1}+...+X_{100}}{100}$. 
 
-> *  uma vez que a coleta foi implementada, $T$ assume um valor, por exemplo, 0.63, que será usado para estimar $\theta$, ou seja, $\hat\theta=0.63$.
+*  uma vez que a coleta foi implementada, $T$ assume um valor, por exemplo, 0.63, que será usado para estimar $\theta$, ou seja, $\hat\theta=0.63$.
 
 
-## Parâmetro {.build}
+## Parâmetro
 
-> *  Cada quantidade de interesse (como $\theta$ no exemplo anterior) é chamada de parâmetro da população. 
+*  Cada quantidade de interesse (como $\theta$ no exemplo anterior) é chamada de parâmetro da população. 
 
-> *  Para apresentar uma estimativa de um parâmetro ($\hat\theta$), devemos escolher uma estatística ($T$). 
+*  Para apresentar uma estimativa de um parâmetro ($\hat\theta$), devemos escolher uma estatística ($T$). 
 
-> *  Note que da maneira que o plano amostral foi executado (amostra aleatória simples), a estatística $T$ é uma variável aleatória, visto que cada vez que executarmos o plano amostral poderemos obter resultados diversos.
+*  Note que da maneira que o plano amostral foi executado (amostra aleatória simples), a estatística $T$ é uma variável aleatória, visto que cada vez que executarmos o plano amostral poderemos obter resultados diversos.
 
-> *  Portanto, a estatística $T$ possui uma distribuição de probabilidade, chamada de **distribuição amostral** de T.
+*  Portanto, a estatística $T$ possui uma distribuição de probabilidade, chamada de **distribuição amostral** de T.
 
 
 
@@ -137,7 +137,7 @@ $$Z=\frac{\bar{X}_{n}-\mu}{\sigma / \sqrt{n}} \sim N(0,1)$$
 
 
 
-## Exemplo {.build}
+## Exemplo
 
 $X=$ resultado obtido no lançamento de um dado honesto.
 
@@ -147,15 +147,15 @@ $x$ | 1 | 2 | 3 | 4 | 5 | 6
 $p(x)=P(X=x)$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$
 
 
-> $E(X)=\frac{1}{6}\times(1+2+3+4+5+6)=\frac{21}{6}=3.5$
+$E(X)=\frac{1}{6}\times(1+2+3+4+5+6)=\frac{21}{6}=3.5$
 
-> $Var(X)=\frac{1}{6}[(1+4+9+16+25+36)-\frac{1}{6}\times(21)^{2}]=\frac{35}{2}=17.5$
+$Var(X)=\frac{1}{6}[(1+4+9+16+25+36)-\frac{1}{6}\times(21)^{2}]=\frac{35}{2}=17.5$
 
-> *  $X_i$: resultado do $i$-ésimo lançamento de um dado honesto.
+*  $X_i$: resultado do $i$-ésimo lançamento de um dado honesto.
 
-> *  $X_i$ tem distribuição uniforme discreta $\forall i$.
+*  $X_i$ tem distribuição uniforme discreta $\forall i$.
 
-> *  $\mu=E(X_i)=3.5 \qquad$ e $\qquad \sigma^2=Var(X_i)=17.5$, $\forall i$.
+*  $\mu=E(X_i)=3.5 \qquad$ e $\qquad \sigma^2=Var(X_i)=17.5$, $\forall i$.
 
 
 ## Exemplo {.build .smaller}
