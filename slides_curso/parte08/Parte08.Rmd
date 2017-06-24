@@ -379,6 +379,27 @@ $$\binom{m+n}{m}=\frac{(m+n)!}{m!n!}$$
     
       $$\mbox{p-valor}=\frac{\#\{ |D| \geq |D_{obs}|\}}{\binom{m+n}{m}}$$
             
+
+
+## Leituras
+
+
+* [Zieffler et al.](http://onlinelibrary.wiley.com/book/10.1002/9781118063682): capítulo 6. 
+
+
+##
+
+Slides produzidos pelos professores:
+
+* Samara Kiihl
+
+* Tatiana Benaglia
+
+* Benilton Carvalho
+
+* Rafael Maia
+
+
       
 
 
