@@ -8,13 +8,13 @@ logo: ../logo_fcm_0.jpg
 ---
 
 
-## Introdução {.build}
+## Introdução 
 
 Testes de permutação/aleatorização podem ser utilizados para avaliar hipóteses sobre efeitos de tratamentos, quando as unidades experimentais são alocadas aleatoriamente para cada tratamento.
 
-> **Exemplo:** Um grupo de pesquisadores quer avaliar se dois tratamentos, $A$ e $B$ apresentam diferença com relação a uma certa resposta de interesse.
+**Exemplo:** Um grupo de pesquisadores quer avaliar se dois tratamentos, $A$ e $B$ apresentam diferença com relação a uma certa resposta de interesse.
 
-> Os pesquisadores têm à disposição 6 pessoas.
+Os pesquisadores têm à disposição 6 pessoas.
 
 <center><img src="figuras/figura1.jpg" width=450></center>
 
@@ -71,7 +71,7 @@ library(printr)
 dados
 ```
 
-## Exemplo {.build}
+## Exemplo
 
 * $\bar{x}_A = `r xbarA`$
 
@@ -83,27 +83,23 @@ dados
 
 * Seria possível, mesmo que não houvesse diferença entre os tratamentos, observar uma diferença de `r xbarA-xbarB`? Isto é, a diferença observada foi devido ao acaso? Ou foi devido ao fato de realmente existir uma diferença entre os tratamentos?
 
-## Exemplo {.build}
+## Exemplo
 
 * $H_0$: não há diferença entre os tratamentos
 
-> * $\mu_A$ a verdadeira média das respostas do Tratamento $A$
+* $\mu_A$ a verdadeira média das respostas do Tratamento $A$
 
-> * $\mu_B$ a verdadeira média das respostas do Tratamento $B$
+* $\mu_B$ a verdadeira média das respostas do Tratamento $B$
 
-> * $H_0$: $\mu_A=\mu_B$.
+* $H_0$: $\mu_A=\mu_B$.
 
-> * Como avaliar?
+* Como avaliar?
 
-## Exemplo {.build}
+
+## Exemplo
 
 Sob $H_0$, não existe diferença entre os tratamentos.
 
-Se $H_0$ é verdadeira, então a resposta de cada pessoa não tem ligação com o tratamento que ela recebeu.
-
-<center><img src="figuras/IMG_20170530_152352435.jpg" width=600></center>
-
-## Exemplo
 
 Se $H_0$ é verdadeira, então a resposta de cada pessoa não tem ligação com o tratamento que ela recebeu.
 
@@ -117,13 +113,13 @@ Se $H_0$ é verdadeira, a diferença observada de `r xbarA-xbarB`, foi apenas co
 Iremos, desta forma, repetir o argumento da $H_0$: avaliar todas as alocações aleatórias possíveis e 6 pessoas entre os Tratamentos $A$ e $B$ e calcular a diferença.
 
 
-## Exemplo {.build}
+## Exemplo
 
 Quantas maneiras temos de escolher ao acaso 3 pessoas, de um grupo de 6?
 
-> $$\binom{6}{3}=`r choose(6,3)`$$
+$$\binom{6}{3}=`r choose(6,3)`$$
 
-> Temos `r choose(6,3)` maneiras de alocar 3 pessoas para o tratamento $A$ e as restantes para o tratamento $B$.
+Temos `r choose(6,3)` maneiras de alocar 3 pessoas para o tratamento $A$ e as restantes para o tratamento $B$.
 
 ```{r,echo=FALSE,warning=FALSE,message=FALSE}
 library(combinat)
